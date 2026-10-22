@@ -38,7 +38,7 @@ function NavItem({ to, label, icon: Icon, path, onNav, nested }: { to: string; l
 }
 
 function SidebarBody({ path, name, onNav, onLogout }: { path: string; name: string; onNav: () => void; onLogout: () => void }) {
-  const [open, setOpen] = useState(inventory.some((i) => path.startsWith(i.to)) || true);
+  const [open, setOpen] = useState<boolean>(true);
   return (
     <div className="flex h-full flex-col bg-sidebar p-4 text-sidebar-foreground">
       <div className="mb-8 flex items-center gap-2 px-2 text-lg font-bold"><Boxes className="h-6 w-6 text-sidebar-primary" /> Stocka</div>
