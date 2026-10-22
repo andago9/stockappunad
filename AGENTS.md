@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Auth and product data are mock, persisted in localStorage (src/lib/auth.ts, src/lib/products.ts); protected pages live under src/routes/_authenticated (ssr:false) — prototype stage, swap for Lovable Cloud later.
