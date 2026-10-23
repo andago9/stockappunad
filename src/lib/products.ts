@@ -69,6 +69,9 @@ export function updateProduct(id: string, p: Omit<Product, "id">) {
 export function setActive(id: string, active: boolean) {
   save(load().map((x) => (x.id === id ? { ...x, active } : x)));
 }
+export function adjustStock(id: string, delta: number) {
+  save(load().map((x) => (x.id === id ? { ...x, stock: Math.max(0, x.stock + delta) } : x)));
+}
 
 export type StockLevel = "ok" | "low" | "out";
 export function stockLevel(p: Pick<Product, "stock" | "minStock">): StockLevel {
@@ -100,10 +103,3 @@ export function validateProduct(v: ProductInput, existing: Product[], selfId?: s
 export const money = (n: number) =>
   new Intl.NumberFormat("es-CO", { style: "currency", currency: "COP", maximumFractionDigits: 0 }).format(n);
 
-export const MOVEMENTS = [
-  { date: "2026-10-22 08:10", product: "Resma papel carta", type: "Entrada", qty: 20, user: "Andrés González" },
-  { date: "2026-10-21 16:42", product: "Mouse inalámbrico", type: "Venta", qty: 2, user: "Laura Pérez" },
-  { date: "2026-10-21 11:05", product: "Jabón líquido 1L", type: "Salida", qty: 5, user: "Andrés González" },
-  { date: "2026-10-20 15:30", product: "Teclado USB", type: "Venta", qty: 4, user: "Laura Pérez" },
-  { date: "2026-10-20 09:12", product: "Toallas de papel", type: "Entrada", qty: 15, user: "Andrés González" },
-] as const;
