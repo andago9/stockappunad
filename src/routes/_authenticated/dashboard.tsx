@@ -3,7 +3,8 @@ import { AlertTriangle, CheckCircle2, Package, XCircle } from "lucide-react";
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { PageHeader, Pill } from "@/components/app/ui-bits";
-import { MOVEMENTS, stockLevel, useProducts } from "@/lib/products";
+import { stockLevel, useProducts } from "@/lib/products";
+import { useMovements } from "@/lib/movements";
 
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({ meta: [{ title: "Dashboard · Stocka" }, { name: "description", content: "Estado general del inventario." }] }),
