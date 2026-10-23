@@ -13,7 +13,7 @@ import { money, setActive, stockLevel, useProducts, type Product } from "@/lib/p
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/_authenticated/productos/")({
-  head: () => ({ meta: [{ title: "Productos · Stocka" }, { name: "description", content: "Registro y consulta de productos." }] }),
+  head: () => ({ meta: [{ title: "Productos · stockapp UNAD" }, { name: "description", content: "Registro y consulta de productos." }] }),
   component: ProductsPage,
 });
 

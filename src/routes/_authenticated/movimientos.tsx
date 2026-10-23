@@ -8,7 +8,7 @@ import { PageHeader, Pill } from "@/components/app/ui-bits";
 import { useMovements, type MovementType } from "@/lib/movements";
 
 export const Route = createFileRoute("/_authenticated/movimientos")({
-  head: () => ({ meta: [{ title: "Movimientos · Stocka" }, { name: "description", content: "Historial completo de movimientos del inventario." }] }),
+  head: () => ({ meta: [{ title: "Movimientos · stockapp UNAD" }, { name: "description", content: "Historial completo de movimientos del inventario." }] }),
   component: MovimientosPage,
 });
 

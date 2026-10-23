@@ -5,7 +5,7 @@ import { PageHeader } from "@/components/app/ui-bits";
 import { createProduct, useProducts } from "@/lib/products";
 
 export const Route = createFileRoute("/_authenticated/productos/nuevo")({
-  head: () => ({ meta: [{ title: "Nuevo producto · Stocka" }, { name: "description", content: "Registrar un nuevo producto." }] }),
+  head: () => ({ meta: [{ title: "Nuevo producto · stockapp UNAD" }, { name: "description", content: "Registrar un nuevo producto." }] }),
   component: NewProduct,
 });
 

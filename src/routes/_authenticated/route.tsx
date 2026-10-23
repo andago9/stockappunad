@@ -41,7 +41,7 @@ function SidebarBody({ path, name, onNav, onLogout }: { path: string; name: stri
   const [open, setOpen] = useState<boolean>(true);
   return (
     <div className="flex h-full flex-col bg-sidebar p-4 text-sidebar-foreground">
-      <div className="mb-8 flex items-center gap-2 px-2 text-lg font-bold"><Boxes className="h-6 w-6 text-sidebar-primary" /> Stocka</div>
+      <div className="mb-8 flex items-center gap-2 px-2 text-lg font-bold"><Boxes className="h-6 w-6 text-sidebar-primary" /> stockapp UNAD</div>
       <nav className="flex-1 space-y-1">
         <NavItem to="/dashboard" label="Dashboard" icon={LayoutDashboard} path={path} onNav={onNav} />
         <NavItem to="/productos" label="Productos" icon={Package} path={path} onNav={onNav} />

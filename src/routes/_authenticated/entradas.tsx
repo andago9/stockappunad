@@ -7,7 +7,7 @@ import { useProducts } from "@/lib/products";
 import { getSession } from "@/lib/auth";
 
 export const Route = createFileRoute("/_authenticated/entradas")({
-  head: () => ({ meta: [{ title: "Entradas · Stocka" }, { name: "description", content: "Registro de entradas de mercancía al inventario." }] }),
+  head: () => ({ meta: [{ title: "Entradas · stockapp UNAD" }, { name: "description", content: "Registro de entradas de mercancía al inventario." }] }),
   component: EntradasPage,
 });
 
