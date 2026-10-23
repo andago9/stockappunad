@@ -13,6 +13,7 @@ export const Route = createFileRoute("/_authenticated/dashboard")({
 
 function Dashboard() {
   const products = useProducts();
+  const movements = useMovements();
   const cards = [
     { label: "Total de productos", value: products.length, icon: Package, cls: "bg-info/15 text-info" },
     { label: "Con existencias", value: products.filter((p) => p.stock > 0).length, icon: CheckCircle2, cls: "bg-success/15 text-success" },
@@ -54,8 +55,8 @@ function Dashboard() {
           <Table>
             <TableHeader><TableRow><TableHead>Fecha</TableHead><TableHead>Producto</TableHead><TableHead>Tipo</TableHead><TableHead className="text-right">Cantidad</TableHead><TableHead>Usuario</TableHead></TableRow></TableHeader>
             <TableBody>
-              {MOVEMENTS.map((m, i) => (
-                <TableRow key={i}>
+              {movements.slice(0, 5).map((m) => (
+                <TableRow key={m.id}>
                   <TableCell className="whitespace-nowrap text-muted-foreground">{m.date}</TableCell>
                   <TableCell className="font-medium">{m.product}</TableCell>
                   <TableCell><Pill tone={tone[m.type]}>{m.type}</Pill></TableCell>
