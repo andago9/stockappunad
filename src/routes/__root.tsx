@@ -79,9 +79,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Stocka · Gestión de inventario" },
+      { title: "stockapp UNAD · Gestión de inventario" },
       { name: "description", content: "Prototipo de sistema de gestión de inventario para pequeñas empresas." },
-      { property: "og:title", content: "Stocka · Gestión de inventario" },
+      { property: "og:title", content: "stockapp UNAD · Gestión de inventario" },
       { property: "og:description", content: "Prototipo de sistema de gestión de inventario para pequeñas empresas." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -5,7 +5,7 @@ import { PageHeader, Pill, StockPill } from "@/components/app/ui-bits";
 import { money, stockLevel, useProducts } from "@/lib/products";
 
 export const Route = createFileRoute("/_authenticated/productos/$id")({
-  head: () => ({ meta: [{ title: "Detalle de producto · Stocka" }, { name: "description", content: "Información del producto." }] }),
+  head: () => ({ meta: [{ title: "Detalle de producto · stockapp UNAD" }, { name: "description", content: "Información del producto." }] }),
   component: ProductDetail,
 });
 

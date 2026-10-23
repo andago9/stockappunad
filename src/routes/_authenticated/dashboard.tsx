@@ -7,7 +7,7 @@ import { stockLevel, useProducts } from "@/lib/products";
 import { useMovements } from "@/lib/movements";
 
 export const Route = createFileRoute("/_authenticated/dashboard")({
-  head: () => ({ meta: [{ title: "Dashboard · Stocka" }, { name: "description", content: "Estado general del inventario." }] }),
+  head: () => ({ meta: [{ title: "Dashboard · stockapp UNAD" }, { name: "description", content: "Estado general del inventario." }] }),
   component: Dashboard,
 });
 

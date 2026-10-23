@@ -5,7 +5,7 @@ import { PageHeader } from "@/components/app/ui-bits";
 import { updateProduct, useProducts } from "@/lib/products";
 
 export const Route = createFileRoute("/_authenticated/productos/$id_/editar")({
-  head: () => ({ meta: [{ title: "Editar producto · Stocka" }, { name: "description", content: "Editar información del producto." }] }),
+  head: () => ({ meta: [{ title: "Editar producto · stockapp UNAD" }, { name: "description", content: "Editar información del producto." }] }),
   component: EditProduct,
 });
 

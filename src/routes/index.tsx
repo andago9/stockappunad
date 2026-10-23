@@ -9,9 +9,9 @@ import { DEMO_USER, getSession, login } from "@/lib/auth";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Iniciar sesión · Stocka Inventario" },
+      { title: "Iniciar sesión · stockapp UNAD" },
       { name: "description", content: "Accede al sistema de gestión de inventario para pequeñas empresas." },
-      { property: "og:title", content: "Iniciar sesión · Stocka Inventario" },
+      { property: "og:title", content: "Iniciar sesión · stockapp UNAD" },
       { property: "og:description", content: "Accede al sistema de gestión de inventario para pequeñas empresas." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -43,7 +43,7 @@ function LoginPage() {
   return (
     <div className="grid min-h-screen lg:grid-cols-2">
       <aside className="relative hidden flex-col justify-between overflow-hidden bg-sidebar p-12 text-sidebar-foreground lg:flex">
-        <div className="flex items-center gap-2 text-lg font-bold"><Boxes className="h-6 w-6 text-sidebar-primary" /> Stocka</div>
+        <div className="flex items-center gap-2 text-lg font-bold"><Boxes className="h-6 w-6 text-sidebar-primary" /> stockapp UNAD</div>
         <div>
           <h1 className="text-4xl font-extrabold leading-tight">Tu inventario,<br />claro y en orden.</h1>
           <p className="mt-4 max-w-sm text-sidebar-foreground/70">Productos, existencias, movimientos y ventas en un solo lugar.</p>
