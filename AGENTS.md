@@ -10,3 +10,5 @@
 <!-- LOVABLE:END -->
 
 - Auth and product data are mock, persisted in localStorage (src/lib/auth.ts, src/lib/products.ts); protected pages live under src/routes/_authenticated (ssr:false) — prototype stage, swap for Lovable Cloud later.
+- Sales use the existing browser-only prototype store; capture immutable line prices, revalidate stock at confirmation, and record one inventory movement per product so reports use historical revenue, not current catalog prices.
+- Report calculations and CSV encoding live in browser-safe shared helpers so on-screen totals and filtered downloads use the same data; inventory valuation is selling-price value, not cost or profit.
